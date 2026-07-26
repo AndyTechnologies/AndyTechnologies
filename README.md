@@ -88,9 +88,15 @@
 <h2>📈 Dashboard</h2>
 
 <!--DASHBOARD_START-->
-<p align="center">
-  <code>⏳ Generando dashboard con el próximo workflow...</code>
-</p>
+<pre>
+📦  Repositorios:     ?
+⭐  Estrellas totales: 2
+🍴  Forks totales:     0
+👥  Seguidores:        ?
+🔄  Siguiendo:         ?
+📝  Commits (2026):   30
+🏆  Más destacado:     Webeact
+</pre>
 <!--DASHBOARD_END-->
 
 <!-- ═══════════════════════ TIMELINE ═══════════════════════ -->
@@ -113,7 +119,16 @@
 <h2>🔥 Currently Working On</h2>
 
 <!--CURRENT_WORK_START-->
-<p align="center"><code>⏳ Se actualiza con el próximo workflow...</code></p>
+<p align="center">
+  <a href="https://github.com/AndyTechnologies/AndyTechnologies">
+    <img src="https://img.shields.io/badge/AndyTechnologies-—?style=for-the-badge&logo=github" />
+  </a>
+</p>
+
+<pre>
+📝  My personal github page
+⭐  0 estrellas · 🌐 — · 📅 Último push: 2026-07-26
+</pre>
 <!--CURRENT_WORK_END-->
 
 <!-- ═══════════════════════ PROYECTOS DESTACADOS ═══════════════════════ -->
@@ -170,7 +185,6 @@
 * ⭐ Starred [mcuking/Awesome-WebAssembly-Applications](https://github.com/mcuking/Awesome-WebAssembly-Applications)
 * 🔀 Merged PR "null" in [AndyTechnologies/wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
 * 🔀 Opened PR "null" in [AndyTechnologies/wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
-* 🔀 Merged PR "null" in [AndyTechnologies/wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
 <!--END_SECTION:activity-->
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->

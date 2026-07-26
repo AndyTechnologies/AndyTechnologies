@@ -24,34 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       # ────────────────────────────────────────────────────
-      # 2. MÉTRICAS SVG (stats + lenguajes + logros + 3D skyline)
-      # ────────────────────────────────────────────────────
-      - name: 📊 Generar métricas
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: header, activity, community, repositories, metadata
-          base_indepth: yes
-          plugin_languages: yes
-          plugin_languages_details: bytes, percentage
-          plugin_languages_limit: 6
-          plugin_achievements: yes
-          plugin_achievements_threshold: B
-          plugin_achievements_secret: yes
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 6
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 30
-          plugin_skyline: yes
-          plugin_skyline_year: 2026
-          plugin_skyline_details: yes
-          config_order: base.header, base.activity, base.community, base.repositories, languages, achievements, activity, skyline
-        continue-on-error: true
-
-      # ────────────────────────────────────────────────────
-      # 3. CONTRIBUTION SNAKE 🐍
+      # 2. CONTRIBUTION SNAKE 🐍
       # ────────────────────────────────────────────────────
       - name: 🐍 Contribution Snake
         uses: Platane/snk@v3
@@ -63,83 +36,7 @@ jobs:
         continue-on-error: true
 
       # ────────────────────────────────────────────────────
-      # 4. ACTIVIDAD RECIENTE
-      # ────────────────────────────────────────────────────
-      - name: 📋 Actualizar actividad en README
-        shell: bash
-        run: |
-          NL=$'\n'
-          EVENTS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/users/AndyTechnologies/events/public?per_page=20")
-
-          ACTIVITY=""
-          COUNT=0
-          for row in $(echo "$EVENTS" | jq -r '.[] | @base64'); do
-            [ "$COUNT" -ge 15 ] && break
-            _jq() { echo "$row" | base64 -d | jq -r "${1}"; }
-
-            TYPE=$(_jq '.type')
-            REPO=$(_jq '.repo.name')
-
-            case "$TYPE" in
-              PushEvent)
-                COUNT=$((COUNT+1))
-                REF=$(echo "$(_jq '.payload.ref')" | sed 's|refs/heads/||')
-                COMMITS=$(_jq '.payload.commits | length')
-                if [ "$COMMITS" -gt 0 ]; then
-                  MSG=$(echo "$(_jq '.payload.commits[0].message')" | head -c 60)
-                  ACTIVITY="${ACTIVITY}${NL}* 🚀 Pushed ${COMMITS} commit(s) to \`${REF}\` in [${REPO}](https://github.com/${REPO}) — ${MSG}"
-                fi
-                ;;
-              CreateEvent)
-                COUNT=$((COUNT+1))
-                REF_TYPE=$(_jq '.payload.ref_type')
-                REF_NAME=$(_jq '.payload.ref')
-                if [ "$REF_TYPE" = "repository" ]; then
-                  ACTIVITY="${ACTIVITY}${NL}* 📦 Created repository [${REPO}](https://github.com/${REPO})"
-                else
-                  ACTIVITY="${ACTIVITY}${NL}* 🌿 Created ${REF_TYPE} \`${REF_NAME}\` in [${REPO}](https://github.com/${REPO})"
-                fi
-                ;;
-              IssuesEvent)
-                COUNT=$((COUNT+1))
-                ACTION=$(_jq '.payload.action')
-                TITLE=$(_jq '.payload.issue.title' | head -c 60)
-                ACTIVITY="${ACTIVITY}${NL}* ❗ ${ACTION^} issue \"${TITLE}\" in [${REPO}](https://github.com/${REPO})"
-                ;;
-              PullRequestEvent)
-                COUNT=$((COUNT+1))
-                ACTION=$(_jq '.payload.action')
-                PR_TITLE=$(_jq '.payload.pull_request.title' | head -c 60)
-                ACTIVITY="${ACTIVITY}${NL}* 🔀 ${ACTION^} PR \"${PR_TITLE}\" in [${REPO}](https://github.com/${REPO})"
-                ;;
-              ReleaseEvent)
-                COUNT=$((COUNT+1))
-                TAG=$(_jq '.payload.release.tag_name')
-                ACTIVITY="${ACTIVITY}${NL}* 🎉 Released ${TAG} in [${REPO}](https://github.com/${REPO})"
-                ;;
-              ForkEvent)
-                COUNT=$((COUNT+1))
-                FORKEE=$(echo "$(_jq '.payload.forkee.full_name')")
-                ACTIVITY="${ACTIVITY}${NL}* 🍴 Forked [${FORKEE}](https://github.com/${FORKEE})"
-                ;;
-              WatchEvent)
-                COUNT=$((COUNT+1))
-                ACTIVITY="${ACTIVITY}${NL}* ⭐ Starred [${REPO}](https://github.com/${REPO})"
-                ;;
-            esac
-          done
-
-          [ -z "$ACTIVITY" ] && ACTIVITY="${NL}*No hay actividad reciente para mostrar.*"
-
-          # Reemplazar sección de actividad
-          perl -i -0pe \
-            's|<!--START_SECTION:activity-->.*?<!--END_SECTION:activity-->|<!--START_SECTION:activity-->'"$ACTIVITY"$'\n''<!--END_SECTION:activity-->|s' \
-            README.md
-          echo "✅ Actividad: ${COUNT} eventos insertados"
-
-      # ────────────────────────────────────────────────────
-      # 5. DASHBOARD — Stats resumidas desde API
+      # 3. DASHBOARD — Stats resumidas desde API
       # ────────────────────────────────────────────────────
       - name: 📈 Generar dashboard de perfil
         shell: bash
@@ -185,48 +82,7 @@ jobs:
           echo "✅ Dashboard generado"
 
       # ────────────────────────────────────────────────────
-      # 6. CURRENTLY WORKING ON — Último repo con actividad
-      # ────────────────────────────────────────────────────
-      - name: 🔥 Actualizar "Currently Working On"
-        shell: bash
-        run: |
-          NL=$'\n'
-
-          EVENTS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/users/AndyTechnologies/events/public?per_page=10")
-          LATEST_REPO=$(echo "$EVENTS" | jq -r \
-            '[.[] | select(.type == "PushEvent") | .repo.name] | first // "AndyTechnologies/AndyTechnologies"')
-
-          REPO_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${LATEST_REPO}")
-          REPO_NAME=$(echo "$REPO_DATA" | jq -r '.name // "—"')
-          REPO_DESC=$(echo "$REPO_DATA" | jq -r '.description // "—"' | head -c 80)
-          REPO_STARS=$(echo "$REPO_DATA" | jq -r '.stargazers_count // "0"')
-          REPO_LANG=$(echo "$REPO_DATA" | jq -r '.language // "—"')
-
-          # Último push
-          PUSHED_AT=$(echo "$REPO_DATA" | jq -r '.pushed_at // ""' | cut -dT -f1)
-
-          SECTION=""
-          SECTION="${SECTION}${NL}<p align=\"center\">"
-          SECTION="${SECTION}${NL}  <a href=\"https://github.com/${LATEST_REPO}\">"
-          SECTION="${SECTION}${NL}    <img src=\"https://img.shields.io/badge/${REPO_NAME}-${REPO_LANG:-lightgrey}?style=for-the-badge&logo=github\" />"
-          SECTION="${SECTION}${NL}  </a>"
-          SECTION="${SECTION}${NL}</p>"
-          SECTION="${SECTION}${NL}"
-          SECTION="${SECTION}${NL}<pre>"
-          SECTION="${SECTION}${NL}📝  ${REPO_DESC}"
-          SECTION="${SECTION}${NL}⭐  ${REPO_STARS} estrellas · 🌐 ${REPO_LANG} · 📅 Último push: ${PUSHED_AT}"
-          SECTION="${SECTION}${NL}</pre>"
-          SECTION="${SECTION}${NL}"
-
-          perl -i -0pe \
-            's|<!--CURRENT_WORK_START-->.*?<!--CURRENT_WORK_END-->|<!--CURRENT_WORK_START-->'"$SECTION"'<!--CURRENT_WORK_END-->|s' \
-            README.md
-          echo "✅ Currently Working On: ${LATEST_REPO}"
-
-      # ────────────────────────────────────────────────────
-      # 7. COMMIT Y PUSH — Todo en uno
+      # 4. COMMIT Y PUSH — Todo en uno
       # ────────────────────────────────────────────────────
       - name: 📦 Commit y push
         run: |

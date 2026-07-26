@@ -3,7 +3,7 @@
   <code>Andy García</code>
 </h1>
 <h3 align="center">
-  🇨🇺 Cuba · ☁️ <strong>CloudWrap</strong> · 🎓 Estudiante de Informática
+  🇨🇺 Cuba · 🎓 Estudiante de Informática
 </h3>
 <h4 align="center">
   C++ · TypeScript · WebAssembly · Astro · Web Components
@@ -20,7 +20,6 @@
     <img src="https://img.shields.io/github/stars/AndyTechnologies?label=Estrellas&logo=github&style=flat-square" alt="Estrellas en repositorios de Andy García" />
   </a>
   <img src="https://img.shields.io/badge/-Cuba-0277bd?style=flat-square" alt="Ubicación: Cuba" />
-  <img src="https://img.shields.io/badge/-CloudWrap-6200EA?style=flat-square" alt="Empresa: CloudWrap" />
   <img src="https://komarev.com/ghpvc/?username=AndyTechnologies&color=blueviolet&style=flat-square&label=Visitas" alt="Contador de visitas al perfil" />
 </p>
 
@@ -36,14 +35,7 @@
 </p>
 
 <p>
-  🔭 Actualmente trabajando en <strong>CloudWrap</strong> y desarrollando 
-  <a href="https://github.com/AndyTechnologies/wasm-apps"><strong>wasm-apps</strong></a>, 
-  un framework para crear aplicaciones nativas con WebAssembly.
-</p>
-
-<p>
-  🌱 Explorando <strong>gráficos 3D</strong> con <strong>MxEngine</strong> (motor de juegos C++), 
-  <strong>arquitectura limpia</strong> con <strong>Webeact</strong> (Web Components + hooks), 
+  🌱 Explorando <strong>arquitectura limpia</strong> con <strong>Webeact</strong> (Web Components + hooks), 
   y <strong>compresión de datos</strong> con <strong>tiny-crc32c</strong> y <strong>zstdpp</strong>.
 </p>
 
@@ -57,22 +49,6 @@
   <img src="https://img.shields.io/badge/-CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="Herramienta CMake" />
   <img src="https://img.shields.io/badge/-Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Entorno Node.js" />
 </div>
-
-<!-- ═══════════════════════ STATS CON MODO OSCURO ═══════════════════════ -->
-<h2>📊 GitHub Stats</h2>
-
-<p align="center">
-  <picture>
-    <source srcset="metrics.svg" media="(prefers-color-scheme: dark)" />
-    <img src="metrics.svg" alt="GitHub Stats de Andy García: estrellas, commits, PRs, lenguajes más usados y logros" />
-  </picture>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://trophy.benkou.dev/?username=AndyTechnologies&theme=darkhub&no-frame=true&column=7&margin-w=15&margin-h=15" alt="Trofeos de GitHub de Andy García: commits, PRs, estrellas, seguidores, repositorios" />
-  </a>
-</p>
 
 <!-- ═══════════════════════ SNAKE CONTRIBUTION ═══════════════════════ -->
 <h2>🐍 Contribution Snake</h2>
@@ -104,7 +80,7 @@
 
 <pre>
 2024 ── zstdpp (C++ wrapper zstd) ── tiny-crc32c (CRC rápido) ── FTXUI (Terminal UI)
-2025 ── ias-toolkit (Emulador IAS) ── MxEngine (Game Engine 3D) ── imgPack
+2025 ── ias-toolkit (Emulador IAS) ── imgPack
 2026 ── <strong>wasm-apps ⭐</strong> (Apps nativas con WASM) ── Webeact (Web Components + hooks) ── PIPWeb (YouTube PiP)
 </pre>
 
@@ -115,21 +91,6 @@
   </a>
 </p>
 
-<!-- ═══════════════════════ CURRENTLY WORKING ON ═══════════════════════ -->
-<h2>🔥 Currently Working On</h2>
-
-<!--CURRENT_WORK_START-->
-<p align="center">
-  <a href="https://github.com/AndyTechnologies/AndyTechnologies">
-    <img src="https://img.shields.io/badge/AndyTechnologies-—?style=for-the-badge&logo=github" />
-  </a>
-</p>
-
-<pre>
-📝  My personal github page
-⭐  0 estrellas · 🌐 — · 📅 Último push: 2026-07-26
-</pre>
-<!--CURRENT_WORK_END-->
 
 <!-- ═══════════════════════ PROYECTOS DESTACADOS ═══════════════════════ -->
 <h2>⭐ Proyectos Destacados</h2>
@@ -177,15 +138,6 @@
   </tr>
 </table>
 
-<!-- ═══════════════════════ ACTIVIDAD RECIENTE ═══════════════════════ -->
-<h2>📈 Actividad Reciente</h2>
-
-<!--START_SECTION:activity-->
-* 🌿 Created branch `main` in [AndyTechnologies/AndyTechnologies](https://github.com/AndyTechnologies/AndyTechnologies)
-* ⭐ Starred [mcuking/Awesome-WebAssembly-Applications](https://github.com/mcuking/Awesome-WebAssembly-Applications)
-* 🔀 Merged PR "null" in [AndyTechnologies/wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
-* 🔀 Opened PR "null" in [AndyTechnologies/wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
-<!--END_SECTION:activity-->
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <hr />
@@ -213,5 +165,5 @@
   Perfil de Andy García — Desarrollador C++, TypeScript, WebAssembly desde Cuba
   Palabras clave: C++, TypeScript, JavaScript, WebAssembly, Astro, Web Components,
   CMake, Node.js, CloudWrap, Cuba, desarrollo de software, programación,
-  wasm-apps, Webeact, ias-toolkit, zstdpp, MxEngine, FTXUI, PIPWeb
+  wasm-apps, Webeact, ias-toolkit, zstdpp, FTXUI, PIPWeb
 -->

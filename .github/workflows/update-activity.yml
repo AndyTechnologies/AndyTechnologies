@@ -54,7 +54,8 @@ jobs:
       - name: 📋 Actualizar actividad en README
         uses: jamesgeorge007/github-activity-readme@master
         with:
+          GH_USERNAME: AndyTechnologies
           COMMIT_MSG: "⚡ Actualizar actividad reciente"
           MAX_LINES: 10
-          PROFILE_USERNAME: AndyTechnologies
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

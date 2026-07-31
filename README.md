@@ -24,8 +24,8 @@ Explora el repositorio: [Webeact](https://github.com/AndyTechnologies/Webeact)
 
 ---
 
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=AndyTechnologies&theme=github_dark&show_icons=true&hide_border=true#gh-dark-mode-only)
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=AndyTechnologies&theme=default&show_icons=true&hide_border=true#gh-light-mode-only)
+![Estadísticas de GitHub](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AndyTechnologies&theme=github_dark#gh-dark-mode-only)
+![Estadísticas de GitHub](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AndyTechnologies&theme=default#gh-light-mode-only)
 
 ---
 

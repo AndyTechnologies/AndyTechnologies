@@ -18,6 +18,10 @@ Descargas totales en npm:
 
 [![@wasm-apps/cli](https://img.shields.io/npm/dt/@wasm-apps/cli?label=@wasm-apps%2Fcli)](https://www.npmjs.com/package/@wasm-apps/cli) [![@wasm-apps/linker](https://img.shields.io/npm/dt/@wasm-apps/linker?label=@wasm-apps%2Flinker)](https://www.npmjs.com/package/@wasm-apps/linker) [![@wasm-apps/compiler](https://img.shields.io/npm/dt/@wasm-apps/compiler?label=@wasm-apps%2Fcompiler)](https://www.npmjs.com/package/@wasm-apps/compiler) [![@wasm-apps/types](https://img.shields.io/npm/dt/@wasm-apps/types?label=@wasm-apps%2Ftypes)](https://www.npmjs.com/package/@wasm-apps/types)
 
+Tamaño minificado y comprimido de la última versión:
+
+[![@wasm-apps/cli](https://img.shields.io/bundlephobia/minzip/@wasm-apps/cli?label=@wasm-apps%2Fcli)](https://bundlephobia.com/package/@wasm-apps/cli) [![@wasm-apps/linker](https://img.shields.io/bundlephobia/minzip/@wasm-apps/linker?label=@wasm-apps%2Flinker)](https://bundlephobia.com/package/@wasm-apps/linker) [![@wasm-apps/compiler](https://img.shields.io/bundlephobia/minzip/@wasm-apps/compiler?label=@wasm-apps%2Fcompiler)](https://bundlephobia.com/package/@wasm-apps/compiler) [![@wasm-apps/types](https://img.shields.io/bundlephobia/minzip/@wasm-apps/types?label=@wasm-apps%2Ftypes)](https://bundlephobia.com/package/@wasm-apps/types)
+
 ---
 
 ## rmlui-xhtm

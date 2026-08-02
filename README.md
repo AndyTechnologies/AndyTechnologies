@@ -14,6 +14,10 @@ Explora el repositorio: [wasm-apps](https://github.com/AndyTechnologies/wasm-app
 
 El paquete npm [@wasm-apps/cli](https://www.npmjs.com/package/@wasm-apps/cli) ofrece una interfaz de línea de comandos para compilar y enlazar proyectos en ejecutables nativos.
 
+Descargas totales en npm:
+
+[![@wasm-apps/cli](https://img.shields.io/npm/dt/@wasm-apps/cli?label=@wasm-apps%2Fcli)](https://www.npmjs.com/package/@wasm-apps/cli) [![@wasm-apps/linker](https://img.shields.io/npm/dt/@wasm-apps/linker?label=@wasm-apps%2Flinker)](https://www.npmjs.com/package/@wasm-apps/linker) [![@wasm-apps/compiler](https://img.shields.io/npm/dt/@wasm-apps/compiler?label=@wasm-apps%2Fcompiler)](https://www.npmjs.com/package/@wasm-apps/compiler) [![@wasm-apps/types](https://img.shields.io/npm/dt/@wasm-apps/types?label=@wasm-apps%2Ftypes)](https://www.npmjs.com/package/@wasm-apps/types)
+
 ---
 
 ## rmlui-xhtm

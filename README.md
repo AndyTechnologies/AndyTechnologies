@@ -1,6 +1,6 @@
-## Andy García
+# Andy García
 
-Desarrollador e innovador cubano apasionado por la informática y las tecnologías de alto rendimiento. Llevo más de cinco años construyendo con C++, y hoy tiendo un puente entre C++ y TypeScript/WebAssembly para crear aplicaciones que cruzan la frontera entre el navegador y el escritorio. Un camino en constante crecimiento.
+Desarrollador e innovador cubano apasionado por la informática y las tecnologías de alto rendimiento. Llevo más de cinco años construyendo con C++, y hoy tiendo un puente entre C++ y TypeScript/WebAssembly para crear aplicaciones que cruzan la frontera entre el navegador y el escritorio, de herramientas CLI a interfaces de alto rendimiento. Un camino en constante crecimiento.
 
 Cuba
 
@@ -14,7 +14,7 @@ Cuba
 
 **wasm-apps** es una toolchain que compila AssemblyScript, C++ y Rust a WebAssembly y los enlaza en ejecutables nativos autocontenidos mediante la C-API de Wasmtime, eliminando la barrera entre el desarrollo web y las aplicaciones de escritorio.
 
-Explora el repositorio: [wasm-apps](https://github.com/AndyTechnologies/wasm-apps)
+Explora [wasm-apps](https://github.com/AndyTechnologies/wasm-apps), la toolchain de WebAssembly que enlaza código nativo a ejecutables autocontenidos.
 
 El paquete npm [@wasm-apps/cli](https://www.npmjs.com/package/@wasm-apps/cli) ofrece una interfaz de línea de comandos para compilar y enlazar proyectos en ejecutables nativos.
 
@@ -28,7 +28,7 @@ Descargas totales en npm:
 
 **rmlui-xhtm** es un plugin header-only para RmlUi, actualmente en desarrollo, que integrará las funcionalidades principales de xhtm (templating JSX-like) y preact (hooks) en las interfaces basadas en RmlUi.
 
-Explora el repositorio: [rmlui-xhtm](https://github.com/AndyTechnologies/rmlui-xhtm)
+Explora [rmlui-xhtm](https://github.com/AndyTechnologies/rmlui-xhtm), el plugin header-only para RmlUi con templating y hooks.
 
 ---
 
@@ -36,7 +36,7 @@ Explora el repositorio: [rmlui-xhtm](https://github.com/AndyTechnologies/rmlui-x
 
 **Webeact** implementa el patrón de hooks de React sobre Web Components nativos, optimizado para integración con servidores Express/Node mediante el hook useSSE y middleware dedicado. Sin frameworks, sin compiladores, sin dependencias externas — solo JavaScript estándar y la plataforma web.
 
-Explora el repositorio: [Webeact](https://github.com/AndyTechnologies/Webeact)
+Explora [Webeact](https://github.com/AndyTechnologies/Webeact), hooks de React sobre Web Components nativos.
 
 ---
 

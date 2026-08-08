@@ -1,8 +1,12 @@
 ## Andy García
 
-Desarrollador e innovador cubano apasionado por la informática y las tecnologías de alto rendimiento. Mi trabajo combina C++ con TypeScript y WebAssembly para crear aplicaciones que cruzan la frontera entre el navegador y el escritorio.
+Desarrollador e innovador cubano apasionado por la informática y las tecnologías de alto rendimiento. Llevo más de cinco años construyendo con C++, y hoy tiendo un puente entre C++ y TypeScript/WebAssembly para crear aplicaciones que cruzan la frontera entre el navegador y el escritorio. Un camino en constante crecimiento.
 
 Cuba
+
+---
+
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 
 ---
 
@@ -37,6 +41,22 @@ Explora el repositorio: [rmlui-xhtm](https://github.com/AndyTechnologies/rmlui-x
 **Webeact** implementa el patrón de hooks de React sobre Web Components nativos, optimizado para integración con servidores Express/Node mediante el hook useSSE y middleware dedicado. Sin frameworks, sin compiladores, sin dependencias externas — solo JavaScript estándar y la plataforma web.
 
 Explora el repositorio: [Webeact](https://github.com/AndyTechnologies/Webeact)
+
+---
+
+## Otros proyectos
+
+- [JRouter](https://github.com/AndyTechnologies/JRouter) — Java — Router de árbol de carpetas para interfaces GUI y controladores
+- [aliasman-rs](https://github.com/AndyTechnologies/aliasman-rs) — Rust — Maneja tus alias de terminal de forma fácil y rápida
+- [zen-editor](https://github.com/AndyTechnologies/zen-editor) — Rust — Editor de texto creado con iced
+- [ias-toolkit](https://github.com/AndyTechnologies/ias-toolkit) — C++ — Toolkit con emulador/ensamblador/preprocesador para la máquina hipotética IAS
+- [PIPWeb](https://github.com/AndyTechnologies/PIPWeb) — Astro — Sitio para ver vídeos de YouTube en modo picture-in-picture desde el navegador
+- [imgPack](https://github.com/AndyTechnologies/imgPack) — C++ — Librería para cargar y guardar imágenes de forma eficiente
+- [tiny-crc32c](https://github.com/AndyTechnologies/tiny-crc32c) — C++ — Librería mínima para calcular CRC32C de forma rápida
+
+---
+
+![Estadísticas de racha](https://streak-stats.demolab.com/?user=AndyTechnologies&theme=dracula)
 
 ---
 
